@@ -8,7 +8,21 @@
     if (z === undefined) {
       z = 42
     }
-    return x+y+z
+    return x + y + z
   }
-  console.log(f(1))
+  console.log(f(1, 3))
 }
+
+{
+  // es6默认参数的写法
+  function f(x, y = 7, z = 42) {
+    return x + y + z
+  }
+  console.log(f(1,4))
+}
+
+{
+    function checkParameter() {
+      throw new Error('can\'t be empty')
+    }
+} 
